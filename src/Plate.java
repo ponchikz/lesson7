@@ -9,7 +9,5 @@ public class Plate {
     public void info() {
         System.out.println("Колличество еды в миске " + food);
     }
-    public void decreaseFood(int appetite) {
-        food -= appetite;
-    }
+    public void decreaseFood(int appetite) {food -= appetite;}
 }
