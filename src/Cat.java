@@ -1,7 +1,7 @@
-public class Cat {
+public class Cat{
     private String name;
     private int appetite;
-    private boolean eat = false;
+    private boolean eat = false;//добавить поле сытость (когда создаем котов, они голодны)
     public Cat(String name, int appetite) {
 
         this.name = name;
@@ -9,6 +9,7 @@ public class Cat {
     }
     public void info() {
         System.out.println(" от по кличке " + name + " с аппетитом " + appetite);
+        //вывести информацию о сытости котов в консоль
         if (eat) {
             System.out.println("ќн не голоден");
     } else {
@@ -18,7 +19,7 @@ public class Cat {
     public void eat(Plate plate) {
         if (plate.getFood() > appetite) {
             plate.decreaseFood(appetite);
-            eat = true;
+            eat = true;//≈сли коту удалось покушать (хватило еды), сытость = true.
         }
     }
 }
