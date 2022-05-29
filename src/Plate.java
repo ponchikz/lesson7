@@ -1,4 +1,4 @@
-public class Plate {
+public class Plate{
     private int food;
     public int getFood() {
         return food;

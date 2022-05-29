@@ -1,4 +1,4 @@
-public class App {
+public class App{
 
     public static void main(String[] args) {
         Cat cat1 = new Cat("־בזמנא", 100);
